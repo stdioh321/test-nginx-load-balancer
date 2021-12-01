@@ -2,7 +2,6 @@ version: '3.9'
 
 services:
   hname:
-    container_name: hname
     image: oguzpastirmaci/hostname
     deploy:
       replicas: 5
@@ -16,4 +15,3 @@ services:
       - hname
     ports:
       - "4000:4000"
-      
